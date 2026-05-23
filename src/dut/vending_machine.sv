@@ -17,7 +17,7 @@ module vending_machine (
     reg [2:0] current_state, next_state;
 
     // State Register
-    always @(posedpge clk or posedge reset) begin
+    always @(posedge clk or posedge reset) begin
         if (reset)
             current_state <= S0;
         else
